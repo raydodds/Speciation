@@ -1,8 +1,57 @@
 <html>
 	<head>
 		<script type="text/javascript" src="./speciation.js"></script>
+		<link rel="stylesheet" type="text/css" href="./speciation.css">
 	</head>
 	<body onload="reset()">
+		<div class="controlWell"  id="controls" width="100%">
+			<table>
+				<tr width="100%">
+					<td width="50%">
+						<div id="buttons">
+							<button onclick="start()">
+								Start
+							</button>
+							<button onclick="stop()">
+								Stop
+							</button>
+							<button onclick="reset()">
+								Reset
+							</button>
+						</div>
+					</td>
+					<td width="50%">
+						<table id="inputs">
+							<tr>
+								<td>
+									Height
+									<br>
+									<input id="height" placeholder="Height" type="number" min="1">
+								</td>
+								<td>
+									Width
+									<br>
+									<input id="width" placeholder="Width" type="number" min="1">
+								</td>
+								<td>
+									Generations
+									<br>
+									<input id="numGenerations" placeholder="Generations" type="number" min="1">
+								</td>
+								<td>
+									<button>
+										Set
+									</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+		<div id="cellContainer">
 		
+		</div>
 	</body>
 <html>

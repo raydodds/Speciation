@@ -1,0 +1,67 @@
+.cell {
+	border: 5px solid #666666;
+	background-color: #808080;
+	position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    /*padding: -1px;*/
+}
+
+/* Tooltip text */
+.cell .celltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.cell:hover .celltip {
+    visibility: visible;
+}
+
+.controlWell {
+	border: none;
+	border-radius: 5px;
+	background-color: #BBDEFB;
+	padding: 10px;
+}
+
+#inputs {
+	text-align: left;
+}
+
+#buttons {
+	text-align: center;
+}
+
+button {
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	width: 100px;
+	background-color: #1E88E5;
+	border: solid;
+	border-color: #1976D2;
+	border-radius: 10%;
+}
+
+button:hover {
+	background-color: #039BE5;
+	border-color: #0288D1;
+	cursor: pointer;
+}
+
+button:active {
+	background-color: #3949AB;
+	border-color: #303F9F;
+}
